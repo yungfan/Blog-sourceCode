@@ -1,0 +1,21 @@
+<resources>
+
+
+    <style name="AppTheme" parent="AppBaseTheme">
+
+
+    </style>
+    <!--AppBaseTheme 先去掉ActionBar colorPrimary 对应ActionBar的颜色 colorPrimary 对应ActionBar的颜色 colorAccent 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。-->
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- customize the color palette -->
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_500</item>
+        <item name="colorAccent">@color/material_green_A200</item>
+
+    </style>
+
+
+</resources>

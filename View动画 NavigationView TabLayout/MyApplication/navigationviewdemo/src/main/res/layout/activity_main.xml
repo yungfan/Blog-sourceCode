@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <!--先是一个ToolBar然后是DrawerLayout 设置了主次标题 注意styles.xml 中的设置-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:subtitle="配合DrawLayout和NavigationView"
+        app:title="ToolBar测试" />
+
+    <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/id_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Hello World"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv_menu_left"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/menu_drawer_left" />
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

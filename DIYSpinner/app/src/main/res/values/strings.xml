@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DIYSpinner</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="affair_level">
+        <item>美女1</item>
+        <item>美女2</item>
+        <item>美女3</item>
+        <item>美女4</item>
+        <item>美女5</item>
+        <item>美女6</item>
+        <item>美女7</item>
+    </string-array>
+</resources>
